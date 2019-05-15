@@ -341,13 +341,60 @@
     <p>Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color. Saturation can be described as the intensity of a color.</p>
     <p>Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white. Lightness of a color can be described as how much light you want to give the color.</p>
 
+    <h2>RGBA Value</h2>
+    <p>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color. An RGBA color value is specified with: <b>rgba(red,green,blue,alpha)</b></p>
+    <h2>HSLA Value</h2>
+    <p>HSLA color values are an etension of HSL color values with an alpha channel - which specifies the opacity for color.</p>
+
     <br>
     <hr>
     <br>
 
+    <h1>HTML STYLES - SHORT CSS INTRODUCTION</h1>
+    <h2>Styling HTML with CSS</h2>
+    <p><b>CSS</b> stands for Cascading Style Sheets.</p>
+    <p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</p>
+    <p>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+    <p>CSS can be added to HTML elements in 3 ways:</p>
+    <ul>
+      <li><b>Inline</b> - by using the style attribute in HTML elements</li>
+      <li><b>Internal</b> - by using a &lt;style&gt; element in the &lt;head&gt; section</head></li>
+      <li><b>External</b> - by using an external CSS file</li>
+    </ul>
+    <p>The most common way to add CSS, is to keep the styles in separate CSS files. However, here we will use inline and internal styling.</p>
 
+    <br>
 
+    <h3>Inline CSS</h3>
+    <p>An inline CSS is used to apply a unique style to a single HTML element. CSS uses the style attribute of an HTML element.</p>
+    <h3 style="color:blue;">This is a Blue Heading</h3>
 
+    <br>
+
+    <h3>Internal CSS</h3>
+    <p>An internall CSS is used to define a style for a single HTML page.</p>
+    <p>An internal CSS is defined in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element</p>
+    <p>&lt;head&gt;</p>
+    <p>&lt;style&gt;</p>
+    <p>body {background-color: powderblue;}</p>
+    <p>h1 {color: blue;}</p>
+    <p>...</p>
+    <p>&lt;/style&gt;</p>
+    <p>&lt;/head&gt;</p>
+
+    <br>
+
+    <h3>External CSS</h3>
+    <p>An external style sheet is used to define the style for many HTML pages.</p>
+    <b>With an external style sheet, you can change the look of an entire web stie, by changing one file!</b>
+    <p>To use an external style sheet, add a link to it in the &lt;head&gt; section of the HTML page:</p>
+    <p>&lt;head&gt;</p>
+    <p>&lt;lnk rel="stylesheet" href="styles.css"&gt;</p>
+    <p>&lt;/head&gt;</p>
+
+    <br>
+    <hr>
+    <br>
 
 
 
