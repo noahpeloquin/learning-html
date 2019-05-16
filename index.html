@@ -2,6 +2,13 @@
 <html lang="en-US">
   <head>
     <title>Learning html</title>
+    <style>
+      td {border:1px solid;}
+      tr {border:1px solid;}
+      th {border:1px solid;}
+      table {border-collapse: collapse;}
+      hr {height: 3px; background-color:black;}
+    </style>
   </head>
   <body>
     <!-- Just so I never have to type this shit again: &lt;&gt;-->
@@ -542,26 +549,26 @@
     <p>To make a cell span more than one column, use the colspan attribute.</p>
     <p>To make a cell span more than one row, use the rowspan attribute.</p>
     <p>To add a caption to a table, use the &lt;caption&gt; tag. The &lt;caption&gt; tag must be inserted immeadiately after the &lt;table&gt; tag.</p>
-    <!--Since there is no style sheet as of now, all style is inline.-->
+    <p>To make table only have one line use: border-collapse: collapse;</p>
     <table style="width:50%;text-align:center;border:1px solid black;border-collapse:collapse;">
       <caption>Companies Owned by Facebook</caption>
-      <tr style="border:1px solid;">
-        <th style="border:1px solid;">Name</th>
-        <th colspan="2" style="border:1px solid;"s>Telephone</th>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
       </tr>
-      <tr style="border:1px solid;">
-        <td style="border:1px solid;">Instagram</td>
-        <td style="border:1px solid;">234-543-3573</td>
-        <td style="border:1px solid;">603-432-4251</td>
+      <tr>
+        <td>Instagram</td>
+        <td>234-543-3573</td>
+        <td>603-432-4251</td>
       </tr>
-      <tr style="border:1px solid;">
-        <td rowspan="2" style="border:1px solid;">Oculus/OculusVR</td>
-        <td style="border:1px solid;">234-234-5411</td>
-        <td style="border:1px solid;">123-513-6243</td>
+      <tr>
+        <td rowspan="2">Oculus/OculusVR</td>
+        <td>234-234-5411</td>
+        <td>123-513-6243</td>
       </tr>
-      <tr style="border:1px solid;">
-        <td style="border:1px solid;">123-513-6243</td>
-        <td style="border:1px solid;">234-234-5411</td>
+      <tr>
+        <td>123-513-6243</td>
+        <td>234-234-5411</td>
       </tr>
     </table>
 
@@ -636,8 +643,33 @@
 
     <h2>Block-level Elements</h2>
     <p>A block-level element always starts on a new line and takes up the full width available(stretches out to the left and right as far as it can).</p>
-    <p>The &lt;div&gt; element is a block-level element.</p>
 
+    <br>
+
+    <h2>Inline Elements</h2>
+    <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+
+    <br>
+
+    <h2>The &lt;div&gt; Element</h2>
+    <p>The &lt;div&gt; elementis often used as a container for other HTML elements.</p>
+    <p>The &lt;div&gt; element has no required attributes, but style, class and id are common.</p>
+    <p>When used together with CSS, the &lt;div&gt; element can be used to style blocks of contet:</p>
+    <img src="divSH.png" alt="Example Div">
+
+    <br>
+
+    <h2>The &lt;span&gt; Element</h2>
+    <p>The &lt;span&gt; element is often used as a container for some text. It has no required attributes, but style, class and id are common.</p>
+    <p>When used together with CSS, the &lt;span&gt; element can be used to style parts of text:</p>
+    <img src="spanSH.png" alt="Example Span">
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>HTML CLASSES</h1>
+    <h2>Using The class Attribute</h2>
 
 
 
