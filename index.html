@@ -5,6 +5,7 @@
   </head>
   <body>
     <!-- Just so I never have to type this shit again: &lt;&gt;-->
+    <!-- Huge ass document that that is a summary from W3Skewls-->
     <h1>HTML Basics</h1>
     <p>All HTML documents must start with a document type declaration:</p>
     <p>&lt;!DOCTYPE html&gt;</p>
@@ -568,7 +569,74 @@
     <hr>
     <br>
 
+    <h1>HTML LISTS</h1>
+    <h2>Unordered HTML List - Choose List Item Marker</h2>
+    <p>The CSS list-style-type property is used to define the style of the list item marker:</p>
+    <ul>
+      <li>disc - Sets the list item marker to a bullet (default)</li>
+      <li>circle - Sets the list item marker to a circle</li>
+      <li>square - Sets the list item marker to a circle</li>
+      <li>none - The list itmes will not be marked</li>
+    </ul>
 
+    <br>
+
+    <h2>Ordered HTML List - The type Attribute</h2>
+    <p>The type attribute of the &lt;ol&gt; tag, defines the type of the list item marker:</p>
+    <ul>
+      <li>type="1" - The list items will be numbered with numbers (default)</li>
+      <li>type="A" - The list items will be numbered with uppercase letters</li>
+      <li>type="a" - The list items will be numbered with lowercase letters</li>
+      <li>type="I" - The list items will be numbered with uppercase roman numbers</li>
+      <li>type="i" - The list items will be numbered with lowercase roman numbers</li>
+    </ul>
+
+    <br>
+
+    <h2>HTML Description Lists</h2>
+    <p>HTML also supports descrition lists.</p>
+    <p>A descritpion lists is a list of terms, with a description of each term.</p>
+    <p>The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt; tag describes each term:</p>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+
+    <br>
+
+    <h2>Control List Counting</h2>
+    <p>By default, an ordered list will start counting from 1. If you want to start counting froma specified number, you can use the start attribute:</p>
+    <ol start="322">
+      <li>Big</li>
+      <li>Time</li>
+      <li>Throws</li>
+    </ol>
+
+    <br>
+
+    <h2>Horizontal List with CSS</h2>
+    <p>HTML lists can be styled in many different ways with CSS.</p>
+    <p>One popular way is to style a list horizontally, to create a navigation menu:</p>
+    <p>Style Includes:</p>
+    <ul>
+      <li>ul - list-style-type: none;</li>
+      <li>li - float: left;</li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>HTML BLOCK AND INLINE ELEMENTS</h1>
+    <p>Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.</p>
+
+    <br>
+
+    <h2>Block-level Elements</h2>
+    <p>A block-level element always starts on a new line and takes up the full width available(stretches out to the left and right as far as it can).</p>
+    <p>The &lt;div&gt; element is a block-level element.</p>
 
 
 
