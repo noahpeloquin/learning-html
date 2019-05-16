@@ -471,10 +471,102 @@
     <h2>Animated Images</h2>
     <p>HTML allows animated GIFS:</p>
     <a href="https://www.youtube.com/watch?v=xfr64zoBTAQ" target="_blank">
-      <img src="cage.gif" alt="Cage god" style="width:300px;height:200px;">
+      <img src="cage.gif" alt="Cage god" style="width:300px;height:200px;border:0;">
     </a>
+    <p>border:0; is added to prevent IE9 (and earlier) from displaying a border around the image (when the image is a link).</p>
 
+    <br>
 
+    <h2>Image Floating</h2>
+    <p>Use the CSS float property to let the image float to the right or to the left of text:</p>
+    <p><img src="cage.gif" alt="Cage god" style="float:right;width:42px;height:30px;">Cage fans to the right.</p>
+    <p><img src="cage.gif" alt="Cage god" style="float:left;width:42px;height:30px;">Cage fans to the left.</p>
+
+    <br>
+
+    <h2>Image Maps</h2>
+    <p>The &lt;map&gt; tag defines an image-map. An image-map is an image with clickable areas.</p>
+    <p>Click on Cage's big-ass forehead</p>
+    <img src="Nicolas-Cage.jpg" style="width:300px;height:200px;" alt="Cage god" usemap="#workmap">
+    <map name="workmap">
+      <area shape="square" target="_blank" coords="80,25,180,60" alt="IMDb" href="https://www.imdb.com/name/nm0000115/">
+    </map>
+    <p>Attributes of link have to go with the area of the map rather than the image.</p>
+
+    <br>
+
+    <h2>The &lt;picture&gt; Element</h2>
+    <p>HTML5 introduced the &lt;picture&gt; element to add more flexibility when specifying image resources.</p>
+    <p>The &lt;picture&gt; element contains a number of &lt;source&gt; elements, each referring to different image sources. This way the browser can choose the image that best fits the current view and/or device.</p>
+    <p>Each &lt;source&gt; element have attributes describing when their image is the most suitable.</p>
+    <p>The browser will use the first &lt;source&gt; element with matching attribute values, and ignore any of the following &lt;source&gt; elements.</p>
+    <img src="pictureSH" alt="Picture element">
+    <p>Always specify an &lt;img&gt; element as the last child element of the &lt;picture&gt; element. The &lt;img&gt; element is used by browsers that do not support the &lt;picture&gt; element, or if none of the &lt;source&gt; tags matched.</p>
+
+    <br>
+
+    <h2>HTML Screen Readers</h2>
+    <p>A screen reader is a software program that reads the HTML code, converts the text, and allows the user to "listen" to the content. Screen readers are useful for people who are visually impaired or learning disabled.</p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>HTML TABLES</h1>
+    <h2>Defining a HTML Table</h2>
+    <p>An HTML table is defined with the &lt;table&gt; tag.</p>
+    <p>Each table row is defined with the &lt;tr&gt; tag. A table header is defined with the &lt;th&gt; tag. By default, table headings are bold and centered. A table data/cell is defined with the &lt;td&gt; tag.</p>
+    <table style="width:50%;text-align:center;">
+      <tr>
+        <th>Movie/Show</th>
+        <th>IMDb Rating</th>
+        <th>GoB (Good or Bad)</th>
+      </tr>
+      <tr>
+        <td style=>Inception</td>
+        <td>8.8</td>
+        <td>G</td>
+      </tr>
+      <tr>
+        <td>GoT Season 8</td>
+        <td>7.3</td>
+        <td>G -Benioff & Weiss</td>
+      </tr>
+    </table>
+    <p>The &lt;td&gt; elements are the data containers of the table. They can contain all sorts of HTML elements; text, images, lists, other tables, etc.</p>
+
+    <br>
+
+    <h2>HTML Table - Cells that Span Many Columns/Rows</h2>
+    <p>To make a cell span more than one column, use the colspan attribute.</p>
+    <p>To make a cell span more than one row, use the rowspan attribute.</p>
+    <p>To add a caption to a table, use the &lt;caption&gt; tag. The &lt;caption&gt; tag must be inserted immeadiately after the &lt;table&gt; tag.</p>
+    <!--Since there is no style sheet as of now, all style is inline.-->
+    <table style="width:50%;text-align:center;border:1px solid black;border-collapse:collapse;">
+      <caption>Companies Owned by Facebook</caption>
+      <tr style="border:1px solid;">
+        <th style="border:1px solid;">Name</th>
+        <th colspan="2" style="border:1px solid;"s>Telephone</th>
+      </tr>
+      <tr style="border:1px solid;">
+        <td style="border:1px solid;">Instagram</td>
+        <td style="border:1px solid;">234-543-3573</td>
+        <td style="border:1px solid;">603-432-4251</td>
+      </tr>
+      <tr style="border:1px solid;">
+        <td rowspan="2" style="border:1px solid;">Oculus/OculusVR</td>
+        <td style="border:1px solid;">234-234-5411</td>
+        <td style="border:1px solid;">123-513-6243</td>
+      </tr>
+      <tr style="border:1px solid;">
+        <td style="border:1px solid;">123-513-6243</td>
+        <td style="border:1px solid;">234-234-5411</td>
+      </tr>
+    </table>
+
+    <br>
+    <hr>
+    <br>
 
 
 
